@@ -14,14 +14,14 @@ The baseline MobileNetV1 model suffered from "manifold collapse" in low-dimensio
 * **Regularization Synergy:** Integrated PyTorch's CIFAR-10 AutoAugment policy, a Dropout layer (p=0.2), and Label Smoothing (0.1) to prevent the widened network from overfitting.
 * **Delayed Learning Schedule:** Shifted learning rate decay milestones to allow the network sufficient time to map the heavily augmented dataset.
 
-<img width="812" height="297" alt="image" src="https://github.com/user-attachments/assets/d96d9f65-3a38-4402-8708-a02a293c3c83" />
-<img width="809" height="290" alt="image" src="https://github.com/user-attachments/assets/f0d15967-223c-4ae2-ba8e-6a330e1f38d5" />
+<img width="700" height="185" alt="image" src="https://github.com/user-attachments/assets/d96d9f65-3a38-4402-8708-a02a293c3c83" />
+<img width="700" height="181" alt="image" src="https://github.com/user-attachments/assets/f0d15967-223c-4ae2-ba8e-6a330e1f38d5" />
 
 
 ### Performance Results
 The final optimized architecture (`WideLinearMobileNet`) achieved a peak top-1 accuracy of **73.95%**.
 
-<img width="819" height="268" alt="image" src="https://github.com/user-attachments/assets/3461f812-1bc1-402b-83e3-b886db797b4d" />
+<img width="700" height="149" alt="image" src="https://github.com/user-attachments/assets/3461f812-1bc1-402b-83e3-b886db797b4d" />
 
 
 | Architecture | Modifications | Peak Accuracy |
