@@ -3,12 +3,15 @@
 This repository contains the architectural analysis and optimization of lightweight Convolutional Neural Networks (CNNs) designed for edge-computing environments. The project is divided into two distinct stages: modifying a MobileNetV1 backbone for image classification, and optimizing a YOLO-based detector head for object detection.
 
 <br>
+
+<div align="center">
 <table>
   <tr>
     <td><img width="400" height="275" alt="image" src="https://github.com/user-attachments/assets/d6734b78-42c3-4d82-9205-62aa32a7241a" /></td>
     <td><img width="400" height="275" alt="image" src="https://github.com/user-attachments/assets/195a836f-0eef-410b-bdcd-e753f94a935d" /></td>
   </tr>
 </table>
+</div>>
 
 <br>
 
