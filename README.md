@@ -74,7 +74,12 @@ The per-class Average Precision (AP) heatmap reveals the granular impact of the 
 * **Complex/Overlapping Objects:** Classes that frequently overlap or have varied aspect ratios (e.g., chair, diningtable, bicycle) saw massive improvements specifically during the Decoupled Head and CIoU tests. This validates the theory that CIoU handles aspect-ratio regression far better than MSE.
 * **Small Objects:** The most difficult classes in the VOC dataset (pottedplant, bird, bottle) saw notable jumps when FPN Concatenation was introduced, confirming that preserving shallow, high-resolution spatial features is critical for small-object localization.
 <br>
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a490dfd9-bb95-449f-b280-5b77ae362e1d" /> <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f71e4853-9298-4d01-b3eb-9bef67520869" /> <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c8eaf38f-eb89-467a-8e12-88f99ba5a95c" />
+
+| Large Objects | Complex Objects | Small Objects |
+| :---: | :---: | :---: |
+| <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a490dfd9-bb95-449f-b280-5b77ae362e1d" /> | <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f71e4853-9298-4d01-b3eb-9bef67520869" /> | <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c8eaf38f-eb89-467a-8e12-88f99ba5a95c" /> |
+
+  
 
 <br>
 
