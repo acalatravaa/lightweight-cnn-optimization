@@ -2,6 +2,13 @@
 
 This repository contains the architectural analysis and optimization of lightweight Convolutional Neural Networks (CNNs) designed for edge-computing environments. The project is divided into two distinct stages: modifying a MobileNetV1 backbone for image classification, and optimizing a YOLO-based detector head for object detection.
 
+<br>
+
+| :---: | :---: |
+| <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/d6734b78-42c3-4d82-9205-62aa32a7241a" /> | ![Alt2](url2.jpg) |<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/195a836f-0eef-410b-bdcd-e753f94a935d" /> | 
+
+<br>
+
 ---
 
 ## Stage 1: Backbone Optimization (CIFAR-100)
@@ -77,7 +84,7 @@ The per-class Average Precision (AP) heatmap reveals the granular impact of the 
 
 | Large Objects | Complex Objects | Small Objects |
 | :---: | :---: | :---: |
-| <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/a490dfd9-bb95-449f-b280-5b77ae362e1d" /> | <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/f71e4853-9298-4d01-b3eb-9bef67520869" /> | <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c8eaf38f-eb89-467a-8e12-88f99ba5a95c" /> |
+| <img width="360" height="448" alt="image" src="https://github.com/user-attachments/assets/fcf7d8a5-3865-4f42-b40b-c4b441e8cf1d" /> | <img width="358" height="442" alt="image" src="https://github.com/user-attachments/assets/1a15644a-6a18-482b-8b9b-21a606d74151" /> | <img width="358" height="445" alt="image" src="https://github.com/user-attachments/assets/e2338292-835d-4034-8777-6b046585820a" /> |
 
   
 
