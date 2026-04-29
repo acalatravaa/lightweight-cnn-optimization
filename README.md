@@ -4,7 +4,6 @@ This repository contains the architectural analysis and optimization of lightwei
 
 <br>
 
-| :---: | :---: |
 | <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/d6734b78-42c3-4d82-9205-62aa32a7241a" /> | <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/195a836f-0eef-410b-bdcd-e753f94a935d" /> | 
 
 <br>
