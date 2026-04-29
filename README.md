@@ -21,7 +21,7 @@ The baseline MobileNetV1 model suffered from "manifold collapse" in low-dimensio
 ### Performance Results
 The final optimized architecture (`WideLinearMobileNet`) achieved a peak top-1 accuracy of **73.95%**.
 
-<img width="700" height="160" alt="image" src="https://github.com/user-attachments/assets/3461f812-1bc1-402b-83e3-b886db797b4d" />
+<img width="700" height="200" alt="image" src="https://github.com/user-attachments/assets/3461f812-1bc1-402b-83e3-b886db797b4d" />
 
 
 <br>
@@ -32,7 +32,7 @@ The final optimized architecture (`WideLinearMobileNet`) achieved a peak top-1 a
 | `base_linear` | Linear Bottlenecks Only | 67.97% |
 | `wide_linear` | Linear Bottlenecks, $\alpha=2.0$, AutoAugment, Label Smoothing | **73.95%** |
 
-
+<br>
 
 ### Execution & Reproducibility (Stage 1)
 Ensure you navigate into the Stage 1 directory so the local modules are properly recognized:
@@ -77,18 +77,19 @@ The per-class Average Precision (AP) heatmap reveals the granular impact of the 
 <img width="545" height="438" alt="image" src="https://github.com/user-attachments/assets/f71e4853-9298-4d01-b3eb-9bef67520869" />
 <img width="545" height="440" alt="image" src="https://github.com/user-attachments/assets/c8eaf38f-eb89-467a-8e12-88f99ba5a95c" />
 
-
-
+<br>
+<br>
 | Model Architecture | mAP (IoU=0.5) | Gain vs. Baseline | Inference | Predicted Boxes |
 | :--- | :--- | :--- | :--- | :--- |
 | Baseline (Coupled + MSE) | 0.529 | - | **65 FPS** | ~14,500 |
 | Final Combined Model | **0.575** | **+4.6%** | 40 FPS | **~11,708** |
 
+<br>
 A hallmark of an under-optimized YOLO network is an over-reliance on generating thousands of low-confidence bounding boxes, hoping the NMS (Non-Maximum Suppression) algorithm will filter them out. The baseline model exhibited this "noisy" behavior, generating roughly 14,500 boxes for 12,032 actual objects.
 As the architectural improvements were applied—specifically the mathematically tighter CIoU loss and the isolated localization branch of the Decoupled Head—the network became significantly more precise. The Final Combined Model generated only 11,708 bounding boxes. This drop in false positives mathematically proves that the network learned to isolate and regress targets with high confidence.
 
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/5b3ef2c4-2b9d-484a-a286-d9beda0802e3" />
-
+<br>
 
 *Note: While the Decoupled Head increased the parameter count and dropped inference speed from 65 FPS to 40 FPS, the model remains comfortably above the 30 FPS threshold for real-time video deployment, making the mAP gain a highly favorable edge-computing trade-off.*
 
