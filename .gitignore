@@ -1,0 +1,21 @@
+# Python Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch Weights
+*.pth
+*.pt
+checkpoint/
+
+# Logs and Data
+runs/
+data/
+
+# OS Generated
+.DS_Store
+
+# Data and Artifacts
+stage2_detection/train-lmdb/
+stage2_detection/test-lmdb/
+stage2_detection/images/
