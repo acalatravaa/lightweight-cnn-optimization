@@ -24,7 +24,7 @@ The final optimized architecture (`WideLinearMobileNet`) achieved a peak top-1 a
 <img width="700" height="160" alt="image" src="https://github.com/user-attachments/assets/3461f812-1bc1-402b-83e3-b886db797b4d" />
 
 
-
+<br>
 
 | Architecture | Modifications | Peak Accuracy |
 | :--- | :--- | :--- |
