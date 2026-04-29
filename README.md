@@ -11,9 +11,8 @@ This repository contains the architectural analysis and optimization of lightwei
     <td><img width="400" height="275" alt="image" src="https://github.com/user-attachments/assets/195a836f-0eef-410b-bdcd-e753f94a935d" /></td>
   </tr>
 </table>
-</div>>
+</div>
 
-<br>
 
 ---
 
